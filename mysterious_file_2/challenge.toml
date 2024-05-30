@@ -1,0 +1,9 @@
+name = "Mysterious File 2"
+author = "ning"
+description = """
+A real reverse engineering challenge?
+Stop it! they're only children!!!"""
+category = "rev"
+difficulty = "hard"
+points = 400
+flag = "saint{saint{d1ss4ss3mb1y_4nd_x0r!}"
