@@ -1,0 +1,10 @@
+name = "Skibidi Encryption"
+author = "ning"
+description = """
+I am so sorry for what I have created
+I regret this so much, what have I done, what has society become
+"""
+category = "crypto"
+difficulty = "medium"
+points = 200
+flag = "saint{I_will_now_repent_for_my_sins}"
