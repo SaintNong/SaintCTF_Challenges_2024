@@ -18,10 +18,6 @@ print("c:", c)
 # This suggests that fermat factorization might work!
 # Read: https://en.wikipedia.org/wiki/Fermat's_factorization_method
 
-def is_square(number):
-    root = math.isqrt(number)
-    return root ** 2 == number
-
 
 def is_square(number):
     # Use math.isqrt because the number is large

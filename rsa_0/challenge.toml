@@ -6,4 +6,4 @@ It is very cool"""
 category = "crypto"
 difficulty = "easy"
 points = 100
-flag = "saint{FLAG_FORMAT}"
+flag = "saint{RSA_1n1t14t10n}"
