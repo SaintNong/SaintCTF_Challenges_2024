@@ -7,5 +7,5 @@ The primes do seem a little bit close together, but surely there's no problem th
 """
 category = "crypto"
 difficulty = "hard"
-points = 400
+points = 450
 flag = "saint{huh_cl0se_pr1mes_4re_uns4fe?}"

@@ -14,7 +14,7 @@ p = getPrime(512) # 512-bit prime
 q = getPrime(512) # 512-bit prime
 
 
-n = p * q # Public key
+n = p * q
 
 # A very commonly used modulus, part 1 of public key
 e = 65537
@@ -22,6 +22,8 @@ print("e:", e)
 
 
 # Debug code, will definitely be deleted in prod
+# WARNING: This MUST be deleted in production
+# If this is not deleted we are in big trouble!
 print("p:", format(p))
 print("q:", format(q))
 
