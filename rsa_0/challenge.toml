@@ -1,0 +1,9 @@
+name = "RSA 0"
+author = "ning"
+description = """
+Read: https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+It is very cool"""
+category = "crypto"
+difficulty = "easy"
+points = 50
+flag = "saint{FLAG_FORMAT}"
