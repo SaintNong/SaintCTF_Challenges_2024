@@ -1,0 +1,11 @@
+name = "RSA 1"
+author = "ning"
+description = """
+Since I am such a godly programmer, I don't need no stupid library to generate primes!
+Naturally then, I wrote my own.
+The primes do seem a little bit close together, but surely there's no problem there right?
+"""
+category = "crypto"
+difficulty = "hard"
+points = 450
+flag = "saint{huh_cl0se_pr1mes_4re_uns4fe?}"

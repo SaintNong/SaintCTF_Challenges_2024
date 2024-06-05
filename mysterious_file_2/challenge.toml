@@ -5,5 +5,5 @@ A real reverse engineering challenge?
 Stop it! they're only children!!!"""
 category = "rev"
 difficulty = "hard"
-points = 400
+points = 500
 flag = "saint{d1ss4ss3mb1y_4nd_x0r!}"
