@@ -1,0 +1,12 @@
+name = "Bytes"
+author = "ning"
+description = """
+What are these mysterious bits and bytes?
+What could they be saying?
+
+pffft must be random noise
+"""
+category = "crypto"
+difficulty = "easy"
+points = 60
+flag = "saint{0mg_1t_w4s_h3x!}"
