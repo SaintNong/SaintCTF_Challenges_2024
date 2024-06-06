@@ -1,9 +1,11 @@
 name = "Mysterious File 2"
 author = "ning"
 description = """
-A real reverse engineering challenge?
-Stop it! they're only children!!!"""
+Hmm this seems to be a login system...
+Can you find a way to break your way in?
+
+Hint: https://www.youtube.com/watch?v=fTGTnrgjuGA"""
 category = "rev"
-difficulty = "hard"
-points = 500
+difficulty = "medium"
+points = 300
 flag = "saint{d1ss4ss3mb1y_4nd_x0r!}"

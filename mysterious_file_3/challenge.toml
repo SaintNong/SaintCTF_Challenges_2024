@@ -1,0 +1,13 @@
+name = "Mysterious File 3"
+author = "ning"
+description = """
+Lesson learnt: No more plaintext strings for passwords.
+In fact, now there aren't any passwords at all!?
+Wow, even the function names are stripped, how evil!
+
+oh noes how will we get the flag now?
+"""
+category = "rev"
+difficulty = "hard"
+points = 500
+flag = "saint{GDB_3xp3rt_c0nf1rm3d?!?}"

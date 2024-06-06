@@ -1,27 +1,73 @@
 #include <stdio.h>
 #include <string.h>
 
-void xor_encrypt(char *input, const char *key, size_t key_len) {
-    size_t input_len = strlen(input);
+void access_granted() {
+    char encoded_flag[] = {
+        120,
+        102,
+        110,
+        115,
+        121,
+        128,
+        105,
+        54,
+        105,
+        100,
+        126,
+        53,
+        122,
+        100,
+        105,
+        54,
+        120,
+        120,
+        57,
+        120,
+        56,
+        114,
+        103,
+        113,
+        56,
+        100,
+        114,
+        56,
+        68,
+        130,
+    };  // Encoded flag
+    int length = sizeof(encoded_flag) / sizeof(encoded_flag[0]);
+    char decoded_flag[length + 1]; // +1 for the null terminator
 
-    // Perform XOR operation, repeating the key if necessary
-    for (size_t i = 0; i < input_len; i++) {
-        input[i] ^= key[i % key_len];
+    // Decode each character by subtracting 5 from its ASCII value
+    for (int i = 0; i < length; i++) {
+        decoded_flag[i] = encoded_flag[i] - 5;
     }
+    decoded_flag[length] = '\0'; // Null-terminate the string
+
+    // Print the decoded flag
+    printf("%s\n", decoded_flag);
 }
 
 int main() {
-    char input_text[] = "\x8a\xc5\xdb\xcf\xb8\xc1\xdf\x88\xfe\xc4\xcd\xd5\xfe\xde\xdf\x86\xb0\xd9\xc5\x8b\xef\xde\xcd\xdb\xad\xde\x8d\x82\xbc\x9c\xc7\xb0\xea\xc3\xda\xb0\xa6\x9d\xcc\xce\xa3";
-    char key[] = "\xde\xad\xbe\xef";     // XOR key
-    size_t key_len = strlen(key);
+    char password[] = "Eromanga Sensei is 10/10";
+    char user_input[256];
 
-    // Encrypt the input
-    xor_encrypt(input_text, key, key_len);
+    printf("Enter password: ");
+    fgets(user_input, sizeof(user_input), stdin);
 
-    // Make some funny
-    puts("Put a breakpoint on me!");
-    puts("(or just disassemble/decompile me idc)");
+    // Strip the newline character fgets stores at the end of input
+    user_input[strlen(user_input) - 1] = '\0';
+    
+    // Check password
+    if (strcmp(user_input, password) == 0) {
+        puts("Access granted.");
+        puts("Here is your flag:");
 
+        access_granted();
+    } else {
+        puts("Access denied.");
+        puts("The password is wrong!");
+    }
 
     return 0;
 }
+
