@@ -4,6 +4,6 @@ description = """
 Read: https://en.wikipedia.org/wiki/RSA_(cryptosystem)
 It is very cool"""
 category = "crypto"
-difficulty = "easy"
-points = 100
+difficulty = "medium"
+points = 125
 flag = "saint{RSA_1n1t14t10n}"

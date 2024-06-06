@@ -5,5 +5,5 @@ This flag contains top secret information,
 so I decided to pixelate it."""
 category = "misc"
 difficulty = "medium"
-points = 250
+points = 300
 flag = "saint{unr3d4ct3d}"

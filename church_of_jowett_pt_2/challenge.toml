@@ -5,5 +5,5 @@ I wonder what secrets the pope keeps in the church
 """
 category = "web"
 difficulty = "hard"
-points = 500
+points = 550
 flag = "saint{j0w3tt_f0rg3ry?_th3r3_c4n_0n1y_b3_0n3!}"
