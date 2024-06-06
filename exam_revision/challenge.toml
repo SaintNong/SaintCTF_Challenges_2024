@@ -5,5 +5,5 @@ can you crack this very secure cipher for me??
 The flag is nvdio{nxnv_xdkczm}"""
 category = "crypto"
 difficulty = "easy"
-points = 30
+points = 25
 flag = "saint{scsa_cipher}"

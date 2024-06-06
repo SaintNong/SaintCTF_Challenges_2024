@@ -1,0 +1,11 @@
+name = "Exam Revision 2"
+author = "ning"
+description = """
+Describe the method by which a substitution cipher could be broken. (3 marks)
+
+Now the real question is, can you do what you described?
+"""
+category = "crypto"
+difficulty = "easy"
+points = 75
+flag = "saint{bet_you_used_some_online_tool_lol!_also_this_is_peak_cinema}"

@@ -5,5 +5,5 @@ Hey uh, I forgot the flag format...
 Could you please find it for me?"""
 category = "misc"
 difficulty = "free points"
-points = 15
+points = 10
 flag = "saint{FLAG_FORMAT}"
