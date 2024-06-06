@@ -6,5 +6,5 @@ Someone told me there would be robots 😭😭😭😭
 Was I lied to?"""
 category = "web"
 difficulty = "easy"
-points = 60
+points = 50
 flag = "saint{I_FOUND_THE_ROBOTS!}"

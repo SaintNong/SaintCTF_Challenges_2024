@@ -9,5 +9,5 @@ c2FpbnR7eWVhaF9iYXNlNjRfaXNfc29ydGFfd2VpcmRfbmdsfQ==
 """
 category = "crypto"
 difficulty = "easy"
-points = 60
+points = 50
 flag = "saint{yeah_base64_is_sorta_weird_ngl}"
