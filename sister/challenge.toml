@@ -1,11 +1,11 @@
 name = "SISTER"
 author = "ning"
 description = """
-The Saint Instruction Set Terminal Emulation Runtime (SISTER) is the what happens if you give ning wayyy too much free time.
+The Saint Instruction Set Terminal Emulation Runtime (SISTER) is what happens if you give ning wayyy too much free time.
 There's even an assembler omfg, and half of a compiler!
 
-There is literally no way anyone will solve this nah
-have fun reversing an emulator lol
+There is literally no way anyone will solve this
+have fun reversing a custom instruction set emulator lol
 """
 category = "rev"
 difficulty = "not ok"
