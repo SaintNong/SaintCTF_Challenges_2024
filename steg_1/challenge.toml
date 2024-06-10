@@ -1,0 +1,9 @@
+name = "LSB Steganography"
+author = "ning"
+description = """
+Wonder what that means?
+"""
+category = "steg"
+difficulty = "easy"
+points = 100
+flag = "saint{st3g4n0gr4phy_1s_v3ry_fun}"
