@@ -1,0 +1,11 @@
+name = "RSA 3"
+author = "ning"
+description = """
+<img src="https://i.imgflip.com/8tedej.jpg">
+
+ur gonna have to install sagemath now 💀💀 rip
+"""
+category = "crypto"
+difficulty = "not ok"
+points = 1100
+flag = "saint{st3r30typ3d_m3ss4g3_4tt4ck?!}"
