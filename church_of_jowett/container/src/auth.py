@@ -22,6 +22,11 @@ def decode_token(token):
     except jwt.ExpiredSignatureError:
         return None
 
+def decode_token_insecure(token):
+    try:
+        return jwt.decode(token, SECRET_KEY, algorithms=["HS256"], options={"verify_signature": False})
+    except jwt.ExpiredSignatureError:
+        return None
 
 def is_pope_role():
     # if user isn't authed at all
@@ -43,7 +48,7 @@ def is_cardinal_role():
         return False
     token = request.cookies.get("auth_token")
     try:
-        data = decode_token(token)
+        data = decode_token_insecure(token)
         if data.get("is_cardinal", False):
             return True
     except jwt.DecodeError:
@@ -59,23 +64,11 @@ def is_authenticated():
     token = request.cookies.get("auth_token")
 
     try:
-        if jwt.decode(token, SECRET_KEY, algorithms=["HS256"]) is not None:
+        if jwt.decode(token, SECRET_KEY, algorithms=["HS256"], options={"verify_signature": False}) is not None:
             return True
     except jwt.DecodeError:
         return False
     return False
-
-
-def promote_token():
-    token = request.cookies.get("auth_token")
-    data = decode_token(token)
-    try:
-        data["is_cardinal"] = True
-        token = create_token(data)
-        return token
-    except jwt.DecodeError:
-        return token
-    return token
 
 
 def requires_cardinal(f):
@@ -92,13 +85,15 @@ def requires_cardinal(f):
                 401,
             )
         try:
-            data = decode_token(token)
-            if data is None or data.get("is_cardinal") is None:
-                return jsonify({"message": "Invalid token, you're not a cardinal"}), 401
+            data = decode_token_insecure(token)
+            if data is None:
+                return jsonify({"message": "Token is missing, you must be logged in to access this"}), 401
+            if data.get("is_cardinal") is None:
+                return jsonify({"message": "Invalid token, cardinal value is missing"}), 401
             if data["is_cardinal"]:
                 request.user_data = data
             else:
-                return jsonify({"message": "Invalid token, data is wrong"}), 401
+                return jsonify({"message": "Invalid token, you're not a cardinal"}), 401
         except jwt.DecodeError:
             return jsonify({"message": "Invalid token, data is wrong"}), 401
 
@@ -122,14 +117,16 @@ def requires_pope(f):
             )
         try:
             data = decode_token(token)
-            if data is None or data.get("is_pope") is None:
-                return jsonify({"message": "Invalid token, you're not the Pope"}), 401
+            if data is None:
+                return jsonify({"message": "Token is missing, you must be logged in to access this"}), 401
+            if data.get("is_cardinal") is None:
+                return jsonify({"message": "Invalid token, cardinal value is missing"}), 401
             if data["is_pope"]:
                 request.user_data = data
             else:
-                return jsonify({"message": "Invalid token, data is wrong"}), 401
+                return jsonify({"message": "Invalid token, you're not the Pope"}), 401
         except jwt.DecodeError:
-            return jsonify({"message": "Invalid token, data is wrong"}), 401
+            return jsonify({"message": "Invalid token, the JWT signature is not correct"}), 401
 
         return f(*args, **kwargs)
 
@@ -153,7 +150,7 @@ def requires_token(f):
         try:
             data = decode_token(token)
             if data is None:
-                return jsonify({"message": "Invalid token, data is wrong"}), 401
+                return jsonify({"message": "Token is missing, you must be logged in to access this"}), 401
             request.user_data = data
         except jwt.DecodeError:
             return jsonify({"message": "Invalid token, data is wrong"}), 401

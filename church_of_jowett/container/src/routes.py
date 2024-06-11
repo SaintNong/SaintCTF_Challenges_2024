@@ -17,7 +17,6 @@ from src.auth import (
     requires_cardinal,
     is_cardinal_role,
     is_pope_role,
-    promote_token,
 )
 import random
 
