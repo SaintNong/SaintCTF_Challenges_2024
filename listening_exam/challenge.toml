@@ -1,0 +1,11 @@
+name = "Listening Exam"
+author = "ning"
+description = """
+Manual labour is fun
+
+(NOTE: flag format is in all lowercase)
+"""
+category = "misc"
+difficulty = "easy"
+points = 100
+flag = "saint{n1c3l1st3n1ng}"
