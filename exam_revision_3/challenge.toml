@@ -1,0 +1,9 @@
+name = "Exam Revision 3"
+author = "Alex"
+description = """
+I'm trying a polyalphabetic cipher that the authority thinks is good,
+I sure hope the key can't be derived!"""
+category = "crypto"
+difficulty = "easy"
+points = 125
+flag = "saint{1_c4nt_b3l1v3_th3_fr3nch_w0u1d_d0_th1s!}"
