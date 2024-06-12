@@ -6,4 +6,4 @@ I sure hope the key can't be derived!"""
 category = "crypto"
 difficulty = "easy"
 points = 125
-flag = "saint{1_c4nt_b3l1v3_th3_fr3nch_w0u1d_d0_th1s!}"
+flag = "saint{1_c4nt_b3l13v3_th3_fr3nch_w0u1d_d0_th1s!}"
