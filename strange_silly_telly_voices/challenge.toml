@@ -1,0 +1,10 @@
+name = "Strange Silly Telly Voices"
+author = "Alex"
+description = """
+My bud Scottie told me this was TV, but I can't make any sense of it?
+What kind of weirdo would greet someone like this?
+"""
+category = "misc"
+difficulty = "medium"
+points = 150
+flag = "saint{g1ut3n_m0rg4n}"
