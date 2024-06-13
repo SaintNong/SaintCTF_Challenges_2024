@@ -9,5 +9,5 @@ have fun reversing a custom instruction set emulator lol
 """
 category = "rev"
 difficulty = "not ok"
-points = 1400
+points = 3000
 flag = "saint{cust0m_ass3mbly_c00l_r1ght?}"

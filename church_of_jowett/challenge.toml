@@ -5,5 +5,5 @@ Come join the holy church of Jowett, high ranking cardinals get a flag
 """
 category = "web"
 difficulty = "medium"
-points = 150
+points = 200
 flag = "saint{h1s_h0lyness_w0uld_b3_pr0ud}"

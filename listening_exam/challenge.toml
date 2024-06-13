@@ -7,5 +7,5 @@ Manual labour is fun
 """
 category = "misc"
 difficulty = "medium"
-points = 120
+points = 150
 flag = "saint{n1c3l1st3n1ng}"
