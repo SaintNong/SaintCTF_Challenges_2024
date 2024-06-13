@@ -1,0 +1,10 @@
+name = "Miku Inspection"
+author = "Alex"
+description = """
+Hatsune Miku made a Website! You should inspect it to see if there's
+anything interesting.
+"""
+category = "web"
+difficulty = "easy"
+points = 60
+flag = "saint{m1ku_1nv3st1g4t10n_succ3ssfu1!}"

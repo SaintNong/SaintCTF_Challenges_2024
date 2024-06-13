@@ -1,0 +1,3 @@
+tag = "miku_inspection"
+port = 3002
+parent = "miku_robots"
