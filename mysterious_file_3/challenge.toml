@@ -9,5 +9,5 @@ oh noes how will we get the flag now?
 """
 category = "rev"
 difficulty = "hard"
-points = 500
+points = 650
 flag = "saint{GDB_3xp3rt_c0nf1rm3d?!?}"

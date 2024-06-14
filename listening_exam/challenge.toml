@@ -6,6 +6,6 @@ Manual labour is fun
 (NOTE: flag format is all lowercase)
 """
 category = "misc"
-difficulty = "medium"
+difficulty = "easy"
 points = 150
 flag = "saint{n1c3l1st3n1ng}"

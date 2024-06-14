@@ -7,5 +7,5 @@ Can you use a time machine to get it back?
 """
 category = "misc"
 difficulty = "medium"
-points = 150
+points = 250
 flag = "saint{T1m3_m@ch1n3_Act1v@t3d!}"

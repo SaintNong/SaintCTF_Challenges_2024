@@ -8,5 +8,5 @@ pffft must be random noise
 """
 category = "crypto"
 difficulty = "easy"
-points = 60
+points = 50
 flag = "saint{0mg_1t_w4s_h3x!}"

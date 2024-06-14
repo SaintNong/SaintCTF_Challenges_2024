@@ -3,6 +3,6 @@ author = "ning"
 description = """
 Anyone here got linux?"""
 category = "rev"
-difficulty = "medium"
-points = 150
+difficulty = "easy"
+points = 100
 flag = "saint{woah_its_a_binary!}"

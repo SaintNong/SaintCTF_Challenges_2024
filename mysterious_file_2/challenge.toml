@@ -7,5 +7,5 @@ Can you find a way to break your way in?
 Hint: https://www.youtube.com/watch?v=fTGTnrgjuGA"""
 category = "rev"
 difficulty = "medium"
-points = 350
+points = 400
 flag = "saint{d1d_y0u_d1ss4s3mbl3_m3?}"

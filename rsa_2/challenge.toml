@@ -6,6 +6,6 @@ Naturally then, I wrote my own.
 The primes do seem a little bit close together, but surely there's no problem there right?
 """
 category = "crypto"
-difficulty = "hard"
+difficulty = "medium"
 points = 400
 flag = "saint{huh_cl0se_pr1mes_4re_uns4fe?}"
