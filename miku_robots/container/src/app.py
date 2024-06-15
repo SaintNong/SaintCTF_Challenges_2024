@@ -9,8 +9,10 @@ app = create_app()
 is_miku = False
 
 @app.errorhandler(401)
-def page_not_found(error):
-    return render_template('401.html'), 401
+def forbidden(error):
+    response = make_response(render_template('401.html'))
+    response.headers['X-Forwarded-Miku'] = "saint{y0u_4sk3d_s0_n1c31y}"
+    return response, 401
 
 @app.route('/')
 def index():
@@ -24,14 +26,19 @@ def index():
     return response
 
 @app.route('/waow')
-def hello():
-    return render_template('waow.html')
+def waow():
+    response = make_response(render_template('waow.html'))
+    response.headers['X-Forwarded-Miku'] = "saint{y0u_4sk3d_s0_n1c31y}"
+    return response
 
 @app.route('/admin')
 def admin():
     admin = request.cookies.get('is_miku')
     if admin and admin != "false":
-        return render_template("admin.html")
+
+        response = make_response(render_template('admin.html'))
+        response.headers['X-Forwarded-Miku'] = "saint{y0u_4sk3d_s0_n1c31y}"
+        return response
     else:
         abort(401)
 
