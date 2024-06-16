@@ -1,7 +1,7 @@
 name = "Miku Inspection"
 author = "Alex"
 description = """
-Hatsune Miku made a Website! You should inspect it to see if there's
+Hatsune Miku made a website! You should inspect it to see if there's
 anything interesting.
 """
 category = "web"
