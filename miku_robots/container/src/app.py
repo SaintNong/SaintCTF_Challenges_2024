@@ -8,27 +8,29 @@ app = create_app()
 
 is_miku = False
 
+
+def add_headers(template):
+    response = make_response(render_template(template))
+    response.headers['X-Forwarded-Miku'] = "saint{y0u_4sk3d_s0_n1c31y}"
+    return response
+
 @app.errorhandler(401)
 def forbidden(error):
-    response = make_response(render_template('401.html'))
-    response.headers['X-Forwarded-Miku'] = "saint{y0u_4sk3d_s0_n1c31y}"
+    response = add_headers('401.html')
     return response, 401
 
 @app.route('/')
 def index():
     admin = request.cookies.get('is_miku')
-    response = make_response(render_template('index.html'))
+    response = add_headers('index.html')
 
     if not admin:
         response.set_cookie('is_miku', 'false')
-
-    response.headers['X-Forwarded-Miku'] = "saint{y0u_4sk3d_s0_n1c31y}"
     return response
 
 @app.route('/waow')
 def waow():
-    response = make_response(render_template('waow.html'))
-    response.headers['X-Forwarded-Miku'] = "saint{y0u_4sk3d_s0_n1c31y}"
+    response = add_headers('waow.html')
     return response
 
 @app.route('/admin')
@@ -36,8 +38,7 @@ def admin():
     admin = request.cookies.get('is_miku')
     if admin and admin != "false":
 
-        response = make_response(render_template('admin.html'))
-        response.headers['X-Forwarded-Miku'] = "saint{y0u_4sk3d_s0_n1c31y}"
+        response = add_headers('admin.html')
         return response
     else:
         abort(401)
