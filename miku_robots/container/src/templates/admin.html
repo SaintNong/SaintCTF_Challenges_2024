@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Miku</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block body %}
     <h1>Wow! You made a cookie!</h1>
     <p>Cookies let sites store information about visitors in their browsers</p>
     <p>Here's your flag:</p>
@@ -15,7 +7,8 @@
     <img src="images/miku_cookie.jpg" alt="miku eats a cookie om nom nom" onclick="miku_alert()" style="height: 600px";>
     <p></p>
     <a href="/">Go Home</a>
-    <!-- Here's part 1 of 3 for one of the flags! The next part is somewhere stylish. -->
-    <!-- saint{m1ku_1nv3st1 -->
-</body>
-</html>
+{% endblock %}
+
+{% block title %}
+<title>Miku</title>
+{% endblock %}
