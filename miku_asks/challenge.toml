@@ -1,0 +1,9 @@
+name = "Miku Asks"
+author = "Ning + Alex"
+description = """
+To get the website, you have to request it, right?
+"""
+category = "web"
+difficulty = "easy"
+points = 50
+flag = "saint{y0u_4sk3d_s0_n1c31y}"

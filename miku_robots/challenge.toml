@@ -1,0 +1,9 @@
+name = "Miku Robots"
+author = "Ning + Alex"
+description = """
+I wonder if there's a way for Miku to tell unwanted bots to leave her site alone?
+"""
+category = "web"
+difficulty = "easy"
+points = 50
+flag = "saint{1_F0UND_TH3_R0B07S!}"

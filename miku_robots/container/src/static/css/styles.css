@@ -1,0 +1,44 @@
+:root {
+    --fg-color: white;
+    --bg-color: #121212;
+    --light-bg-color: #1e1e1e;
+    --purple-1: #964ae2; /* purple */
+    --purple-2: #7329c4; /* hover */
+    --link-color: #4a90e2;
+    --form-field-border-color: #333;
+    --hover-color: #1a1a1a;
+    --user-highlight: #004225;
+
+    --spacing: 0.5em;
+}
+
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+
+body {
+    min-height: 100%; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+}
+
+/* Here's a second part for one of the flags! The last piece is in somewhere about coffee.*/
+/* g4t10n_suc
+
+/* Header styling */
+#main-header h1 {
+    color: var(--fg-color);
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: var(--light-bg-color);
+}
+

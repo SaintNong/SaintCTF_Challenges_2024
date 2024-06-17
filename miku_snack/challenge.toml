@@ -1,0 +1,10 @@
+name = "Miku Snack"
+author = "Alex"
+description = """
+Miku could do with a snack, I wonder if there
+are any on her website?
+"""
+category = "web"
+difficulty = "easy"
+points = 60
+flag = "saint{0m_n0m_nom_74s7y}"
