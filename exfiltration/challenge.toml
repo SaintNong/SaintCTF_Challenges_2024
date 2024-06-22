@@ -1,0 +1,11 @@
+name = "Exfiltration"
+author = "Andrew"
+description = """
+Agent, your mission is to exfiltrate the flag from this server.
+Our intel tells us that the server also hosts an online Python
+interpreter, maybe you can leverage that to find a way in?
+"""
+category = "pwn"
+difficulty = "easy"
+points = 100
+flag = "saint{g00d_w0rk_ag3nt_3xfi1_c0mplet3}"
