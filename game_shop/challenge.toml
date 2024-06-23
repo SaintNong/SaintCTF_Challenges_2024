@@ -1,0 +1,10 @@
+name = "Game Shop"
+author = "Alex"
+description = """
+Oh no! My Favorite Games store moved! Where did it move to?
+Flag is all lowercase, with underscores for spaces
+"""
+category = "osint"
+difficulty = "medium"
+points = 250
+flag = "saint{119_barrack_street}"
