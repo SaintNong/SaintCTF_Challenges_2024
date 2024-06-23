@@ -1,0 +1,11 @@
+name = "Trackless Tram"
+author = "Alex"
+description = """
+Wow! It's a trackless tram! What an innovation in public transport!
+I wonder who operates them?
+Flag is the acronym of the organisation that runs these vehicles, in all caps.
+"""
+category = "osint"
+difficulty = "easy"
+points = 150
+flag = "saint{ACTION}"
