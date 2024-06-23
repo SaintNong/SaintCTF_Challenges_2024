@@ -3,7 +3,7 @@ author = "The City of Perth, I guess"
 description = """
 Go solve this plaque.
 What? No, I'm not giving you a key, go find one yourself.
-Flag is all lowercase, with underscores for spaces
+Flag is all lowercase, with underscores for spaces.
 """
 category = "osint"
 difficulty = "medium"

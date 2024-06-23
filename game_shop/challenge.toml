@@ -1,8 +1,8 @@
 name = "Game Shop"
 author = "Alex"
 description = """
-Oh no! My Favorite Games store moved! Where did it move to?
-Flag is all lowercase, with underscores for spaces
+Oh no! My favorite games store moved! Where did it move to?
+Flag is the address (number and street name), all lowercase, with underscores for spaces
 """
 category = "osint"
 difficulty = "medium"

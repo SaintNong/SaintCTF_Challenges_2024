@@ -2,7 +2,7 @@ name = "Onomastics"
 author = "Alex"
 description = """
 I mean the building has Rio Tinto's name on top, but what's it called?
-Flag is all lowercase, with underscores for spaces"""
+Flag is all lowercase, with underscores for spaces."""
 category = "osint"
 difficulty = "easy"
 points = 100
