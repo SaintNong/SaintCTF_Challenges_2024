@@ -1,0 +1,10 @@
+name = "Borb"
+author = "Alex"
+description = """
+What is the scientific name of this bird?
+Flag is all lowercase, with underscores for spaces.
+"""
+category = "osint"
+difficulty = "medium"
+points = 300
+flag = "saint{anhinga_novaehollandiae}"
