@@ -1,0 +1,11 @@
+name = "Ominous Pole"
+author = "Alex"
+description = """
+Well that's an ominous pole! Why does the DoD need that?
+Flag is the coordinates of the pole, rounded to 4 decimal places.
+(like saint{-123.4567, 89.8765})
+"""
+category = "osint"
+difficulty = "medium"
+points = 200
+flag = "saint{-35.2976, 149.1517}"

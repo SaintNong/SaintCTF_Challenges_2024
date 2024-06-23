@@ -1,0 +1,11 @@
+name = "Property Damage"
+author = "Alex"
+description = """
+I broke a fire extinguisher here once!
+What government cyber security agency had to fix it?
+Flag is the agency's acronym in all caps.
+"""
+category = "osint"
+difficulty = "easy"
+points = 100
+flag = "saint{ACSC}"

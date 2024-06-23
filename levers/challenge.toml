@@ -1,0 +1,9 @@
+name = "Levers"
+author = "Alex"
+description = """
+What year was this lever frame retired?
+"""
+category = "osint"
+difficulty = "medium"
+points = 300
+flag = "saint{1987}"

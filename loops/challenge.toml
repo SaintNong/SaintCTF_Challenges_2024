@@ -1,0 +1,10 @@
+name = "Loops"
+author = "Alex"
+description = """
+Where are these loops?
+Flag is all lowercase, with underscores for spaces.
+"""
+category = "osint"
+difficulty = "easy"
+points = 50
+flag = "saint{elizabeth_quay}"

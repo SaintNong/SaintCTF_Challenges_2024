@@ -1,0 +1,10 @@
+name = "Government Service"
+author = "Alex"
+description = """
+What's the URL for the service that runs out of this building?
+Flag looks like: saint{example.com}
+"""
+category = "osint"
+difficulty = "medium"
+points = 250
+flag = "saint{slwa.wa.gov.au}"
