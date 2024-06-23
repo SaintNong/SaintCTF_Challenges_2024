@@ -1,0 +1,9 @@
+name = "Government Service"
+author = "Alex"
+description = """
+What's the url for the service that runs out of this building?
+"""
+category = "osint"
+difficulty = "medium"
+points = 250
+flag = "saint{slwa.wa.gov.au}"
