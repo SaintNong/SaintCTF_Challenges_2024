@@ -1,0 +1,10 @@
+name = "Infant osint"
+author = "Alex"
+description = """
+What city am I in?
+Come on surely you can get this
+Flag is the name of the city in lowercase"""
+category = "osint"
+difficulty = "free points"
+points = 10
+flag = "saint{perth}"
