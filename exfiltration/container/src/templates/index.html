@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Interpreter</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+        }
+        fieldset {
+            display: inline;
+        }
+        pre {
+            margin: 0;
+            color: greenyellow;
+        }
+        form {
+            margin-top: 1em;
+        }
+        textarea {
+            background-color: black;
+            color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Python Interpreter</h1>
+    <p><strong>Use this page to play around with Python!</strong></p>
+
+    {% if result is not none %}
+    <fieldset>
+        <legend>Result</legend>
+        <pre><code>{{ result }}</code></pre>
+    </fieldset>
+    {% endif %}
+
+    <form method="post">
+        <fieldset>
+            <legend><label for="codearea">Type your code here:</label></legend>
+            <textarea id="codearea" name="code" rows="24" cols="80">{{ code }}</textarea><br>
+            <input type="submit" value="Submit code" />
+        </fieldset>
+    </form>
+</body>
+</html>
