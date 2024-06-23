@@ -1,0 +1,10 @@
+name = "AvGeek"
+author = "Alex"
+description = """
+Who operates this plane?
+Flag is the agency's acronym in all caps.
+"""
+category = "osint"
+difficulty = "hard"
+points = 700
+flag = "saint{RFDS}"
