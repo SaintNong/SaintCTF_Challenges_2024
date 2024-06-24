@@ -15,7 +15,7 @@ git clone https://github.com/SaintNong/SaintCTF_Challenges_2024.git .
 
 ## Some loose guidelines for new challenges on this repo
 - If your challenge is short, (i.e. around 1 or 2 commits), then you do not *need* to create a branch.
-  - e.g. Some crypto challenges just need container.toml and that's it.
+  - e.g. Some crypto challenges just need challenge.toml and that's it.
 - Otherwise, please create a branch for your challenge which will be merged onto main.
   - This is especially true for containerized challenges, where for example you may need to build an entire web app for your challenge. Please, we urge you, do all of that on a branch.
 
