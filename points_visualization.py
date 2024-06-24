@@ -74,7 +74,8 @@ def main():
 
     for difficulty, points_list in difficulties.items():
         mean = statistics.mean(points_list)
-        print(f"Difficulty: {difficulty}, Mean score: {mean}")
+        count = len(points_list)
+        print(f"Difficulty: {difficulty}, Mean score: {mean}, Count: {count}")
 
 
 
