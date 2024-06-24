@@ -1,0 +1,10 @@
+name = "Compression"
+author = "Alex"
+description = """
+There's not much time left in the year,
+so I'm going to squeeze in one of next year's powerpoints into your course.
+"""
+category = "misc"
+difficulty = "easy"
+points = 150
+flag = "saint{kn0w13dg3_c0mpr3ss3d}"
