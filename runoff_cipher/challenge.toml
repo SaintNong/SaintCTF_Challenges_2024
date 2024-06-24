@@ -1,0 +1,12 @@
+name = "Runoff cipher"
+author = "ning"
+description = """
+Each letter affects the next!
+
+What genius could have created this?
+"""
+category = "crypto"
+difficulty = "medium"
+points = 350
+flag = "saint{something_something...nevermind_I_ran_out_of_flag_ideas}"
+
