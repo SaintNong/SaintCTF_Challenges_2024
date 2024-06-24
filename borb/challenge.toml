@@ -6,5 +6,5 @@ Flag is all lowercase, with underscores for spaces.
 """
 category = "osint"
 difficulty = "medium"
-points = 300
+points = 200
 flag = "saint{anhinga_novaehollandiae}"
