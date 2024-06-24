@@ -1,0 +1,9 @@
+name = "Where Flag"
+author = "ning"
+description = """
+It's hiding in plain sight
+"""
+category = "steg"
+difficulty = "easy"
+points = 100
+flag = "saint{1t_w@s_st3gh1d1ng_1n_pl@1n_s1ght!}"
