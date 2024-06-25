@@ -6,5 +6,5 @@ What kind of weirdo would greet someone like this?
 """
 category = "misc"
 difficulty = "medium"
-points = 250
+points = 300
 flag = "saint{g1ut3n_m0rg4n}"

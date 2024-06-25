@@ -6,5 +6,5 @@ Flag looks like: saint{example.com}
 """
 category = "osint"
 difficulty = "medium"
-points = 250
+points = 200
 flag = "saint{slwa.wa.gov.au}"

@@ -7,5 +7,5 @@ interpreter, maybe you can leverage that to find a way in?
 """
 category = "pwn"
 difficulty = "easy"
-points = 100
+points = 150
 flag = "saint{g00d_w0rk_ag3nt_3xfi1_c0mplet3}"

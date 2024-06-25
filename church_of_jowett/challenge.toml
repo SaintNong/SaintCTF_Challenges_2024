@@ -4,6 +4,6 @@ description = """
 Come join the holy church of Jowett, high ranking cardinals get a flag
 """
 category = "web"
-difficulty = "easy"
-points = 150
+difficulty = "medium"
+points = 250
 flag = "saint{h1s_h0lyness_w0uld_b3_pr0ud}"

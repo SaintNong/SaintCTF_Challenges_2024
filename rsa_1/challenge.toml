@@ -7,5 +7,5 @@ haaaaaaaaa now what will you do?
 """
 category = "crypto"
 difficulty = "medium"
-points = 200
+points = 250
 flag = "saint{1t_w4s_l1t3r4lly_4_cub3r00t?}"

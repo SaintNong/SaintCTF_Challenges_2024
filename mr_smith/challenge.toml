@@ -5,5 +5,5 @@ I don't think Mr Smith quite liked the equation that I worked very hard on in Me
 """
 category = "misc"
 difficulty = "medium"
-points = 400
+points = 350
 flag = "saint{pl3@s3_j01n_th3_mr_sm1th_cu1t_w3_n33d_m0r3_m3mb3rs}"
