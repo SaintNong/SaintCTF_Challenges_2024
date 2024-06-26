@@ -106,7 +106,7 @@ def cardinal_win():
     if is_pope_role() and is_cardinal_role():
         return render_template(
             "cardinal_revelations.html",
-            flag="saint{h1s_h0lyness_w0uld_b3_pr0ud}",
+            flag="saint{v4l1d4t1ng_s3cr3ts_1s_f0r_chumps}",
             is_auth=True,
             is_cardinal_role=True,
             is_pope_role=True,
@@ -114,7 +114,7 @@ def cardinal_win():
     else:
         return render_template(
             "cardinal_revelations.html",
-            flag="saint{h1s_h0lyness_w0uld_b3_pr0ud}",
+            flag="saint{v4l1d4t1ng_s3cr3ts_1s_f0r_chumps}",
             is_auth=True,
             is_cardinal_role=True,
         )
@@ -170,7 +170,7 @@ def todo():
 def pope_win():
     return render_template(
         "pope_revelations.html",
-        flag="saint{j0w3tt_f0rg3ry?_th3r3_c4n_0n1y_b3_0n3!}",
+        flag="saint{h1_j0w3tt_y0u_r3411y_4r3_th3_b3st}",
         is_auth=True,
         is_cardinal_role=True,
         is_pope_role=True,
