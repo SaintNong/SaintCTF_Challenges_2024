@@ -1,0 +1,8 @@
+name = "Internet Sequel Database"
+author = "Alex"
+description = """
+If imdb is so good, where's imdb 2?"""
+category = "web"
+difficulty = "easy"
+points = 150
+flag = "saint{if_sqli_is_so_good_wheres_sqli_2?}"

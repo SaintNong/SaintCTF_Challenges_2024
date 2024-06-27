@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h1>DB TEST</h1>
+    <form method="post">
+        <input type="text" class="form-control" id="name" name="name" placeHolder="Name">
+    </form>
+    
+    {% if output %}
+    <p>{{ output }}</p>
+    {% endif %}
+
+
+{% endblock %}
+
+{% block title %}
+<title>TEST</title>
+{% endblock %}

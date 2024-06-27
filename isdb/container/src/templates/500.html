@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h1>500 ded</h1>
+    <h1>Something bad happened</h1>
+    {% if query %}  
+    <p>Oops! the query dieded</p>
+    <p>SELECT title FROM movie WHERE title = '{{ query }}';</p>
+    {% else %}
+    <p>bad thing happened: {{ error }}</p>
+    {% endif %}
+    <a href="/">Go Home</a>
+{% endblock %}
+
+{% block title %}
+<title>500</title>
+{% endblock %}
