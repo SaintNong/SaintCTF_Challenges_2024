@@ -1,0 +1,11 @@
+name = "That Rev Challenge is a spy!"
+author = "Alex"
+description = """
+Wow I made a map for the source engine.
+There's a flag hiding in the walls :3
+(Flag is all uppercase, like: saint{N0T_TH3_FL4G})
+"""
+category = "rev"
+difficulty = "medium"
+points = 250
+flag = "saint{C0UN7_70_7HR33}"
