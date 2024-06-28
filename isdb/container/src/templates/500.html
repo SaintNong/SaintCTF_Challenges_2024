@@ -5,7 +5,7 @@
     {% if query %}  
     <p>Oops! the query dieded, looks like sqlite is sad (┬┬﹏┬┬)</p>
     <p> </p>
-    <p>SELECT title, year, score FROM movie WHERE title = '{{ query }}';</p>
+    <p>SELECT title, year, type FROM sequels WHERE title = '{{ query }}';</p>
     <p>bad thing happened: {{ error }}</p>
     {% endif %}
     <a href="/">Go Home</a>

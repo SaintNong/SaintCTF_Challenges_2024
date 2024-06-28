@@ -7,11 +7,24 @@ con = sqlite3.connect("tutorial.db")
 
 cur = con.cursor()
 try:
-    cur.execute("CREATE TABLE movie(title, year, score)")
+    cur.execute("CREATE TABLE sequels(title, year, type)")
     cur.execute("""
-        INSERT INTO movie VALUES
-            ('Monty Python and the Holy Grail', 1975, 8.2),
-            ('And Now for Something Completely Different', 1971, 7.5)
+        INSERT INTO sequels VALUES
+            ('Mad Max: Fury Road', 2015, 'Movie'),
+            ('Toy Story 2', 1971, 'Movie'),
+            ('Die Hard 2',1,1),
+            ('Star Wars': The Empire Strikes Back, 1, 'Movie'),
+            ('Top Gun: Maverick', 1, 'Movie'),
+            ('Helldivers 2', 2024, 'Game'),
+            ('Avatar: The Way of Water', 1, 'Movie'),
+            ('The Dark Knight', 1, 'Movie'),
+            ('Speed 2', 1, 'Movie'),
+            ('Portal 2, 2012, 'Game'),
+            ('Counter Strike 2', 2024, 'Game'),
+            ('Mamma Mia! Here We Go Again', 1, 'Movie'),
+            ('The Godfather, Part II', 1, 'Movie'),
+            ('Red Dead Redemption 2',1,'Game'),
+            ('Super Mario Bros 2',1,'Game')
     """)
     cur.execute("CREATE TABLE users(username, password, ssn)")
     cur.execute("""
@@ -47,7 +60,7 @@ def index():
         cur = con.cursor()
 
         try:
-            res = cur.execute(f"SELECT title, year, score FROM movie where title = '{query}'")
+            res = cur.execute(f"SELECT title, year, type FROM sequels where title = '{query}'")
         except sqlite3.Error as e:
             return render_template('500.html', query=query, error=e), 500
 

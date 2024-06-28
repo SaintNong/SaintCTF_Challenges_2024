@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 {% block body %}
-    <h1>DB TEST</h1>
+    <h1>Welcome to the internet sequel database</h1>
+ 
     <form method="post">
         <input type="text" class="form-control" id="name" name="name" placeHolder="Name">
+        <button type="submit" class="btn btn-primary">Submit Query</button>
     </form>
+    
     
     {% if output %}
     <p>{{ output }}</p>
