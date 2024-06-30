@@ -1,0 +1,9 @@
+name = "Find That Song 1"
+author = "Daniel"
+description = """
+Rivers are often personified as inviting or enchanting bodies, but have you ever heard one sing? Find the name of the composer who wrote a song containing the lyric: “the song of the river.”
+Flag format is the first and last name of the person, all lowercase, underscores for spaces."""
+category = "osint"
+difficulty = "easy"
+points = 75
+flag = "saint{roger_emerson}"

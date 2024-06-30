@@ -1,0 +1,9 @@
+name = "Find That Song 3"
+author = "Daniel"
+description = """
+There’s a certain song that contains the lyric: “land of the chosen few.” Who is this song dedicated to?
+Flag format is the first and last name of the person, all lowercase, underscores for spaces."""
+category = "osint"
+difficulty = "hard"
+points = 450
+flag = "saint{liz_markey}"

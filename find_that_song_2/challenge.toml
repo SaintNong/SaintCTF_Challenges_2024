@@ -1,0 +1,9 @@
+name = "Find That Song 2"
+author = "Daniel"
+description = """
+I once heard a song that went “who’ll come a-waltzing Matilda?” Could you help me find the name?
+Flag format is the name of the song, all lowercase, underscores for spaces."""
+category = "osint"
+difficulty = "medium"
+points = 250
+flag = "saint{song_of_australia}"
